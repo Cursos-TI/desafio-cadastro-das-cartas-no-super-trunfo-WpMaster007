@@ -36,5 +36,5 @@ int main(){
     printf("Digite o PIB: ");
     scanf("%f", &PIB);
     printf("O PIB é: %f\n", PIB);
-    
+    return 0;
 }
