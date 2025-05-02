@@ -7,6 +7,8 @@ int main(){
     float Area;
     float PIB;
     int Populacao, Pontos;
+    float Densidade;
+    float PIBPERCAPTA;
 
     char Estado2 [3];
     char Codigo2 [4];
@@ -14,7 +16,9 @@ int main(){
     float Area2;
     float PIB2;
     int Populacao2, Pontos2;
-
+    float Densidade;
+    float PIBPERCAPTA;
+    
     printf ("Carta 1 \n" );
     printf("Digite o Estado: ");
     scanf("%s", Estado);
