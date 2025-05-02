@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(){
     
+    // Declaração de variáveis da Carta 1
     char Estado [3];
     char Codigo [4];
     char Cidade [100];
@@ -10,15 +11,18 @@ int main(){
     float Densidade;
     float PIBPERCAPTA;
 
+    // Declaração de variáveis da Carta 2
     char Estado2 [3];
     char Codigo2 [4];
     char Cidade2 [100];
     float Area2;
     float PIB2;
     int Populacao2, Pontos2;
-    float Densidade;
-    float PIBPERCAPTA;
+    float Densidade2;
+    float PIBPERCAPTA2;
     
+
+     // Entrada de dados da Carta 1
     printf ("Carta 1 \n" );
     printf("Digite o Estado: ");
     scanf("%s", Estado);
@@ -41,8 +45,15 @@ int main(){
     printf("Digite os Pontos Turísticos: ");
     scanf("%d", &Pontos);
 
+    Densidade = (float) Populacao / Area;
+    PIBPERCAPTA = (float) PIB / Populacao;
+    PIBPERCAPTA = (PIB * 1000000000) / Populacao;
+
+
     printf (" \n" );
 
+
+     // Entrada de dados da Carta 2
     printf ("Carta 2 \n" );
     printf("Digite o Estado: ");
     scanf("%s", Estado2);
@@ -64,9 +75,16 @@ int main(){
 
     printf("Digite os Pontos Turísticos: ");
     scanf("%d", &Pontos2);
+
+    Densidade2 = (float) Populacao2 / Area2;
+    PIBPERCAPTA2 = (float) PIB2 / Populacao2;
+    PIBPERCAPTA2 = (PIB2 * 1000000000) / Populacao2;
+
     
-    printf("\n");
+    // pular linha dos dados da carta 01 para carta 02.
+    printf("\n"); 
     
+    // Exibição dos dados da Carta 1
     printf("CARTA 1 \n");
     printf("O Estado é: %s\n", Estado);
     printf("O Codigo é: %s\n", Codigo);
@@ -75,7 +93,13 @@ int main(){
     printf("Área: %.2f km²\n", Area);
     printf("O PIB é: %.2f Bilhões de reais\n", PIB);
     printf("Os Pontos Turísticos são: %d\n", Pontos);
+    printf("A Densidade Populacional é: %.2f hab/km²\n", Densidade);
+    printf("PIB per Capita é: %.2f reais\n", PIBPERCAPTA);
 
+    // pular linha dos dados da carta 01 para carta 02.
+    printf("\n"); 
+
+    // Exibição dos dados da Carta 2
     printf("CARTA 2 \n");
     printf("O Estado é: %s\n", Estado2);
     printf("O Codigo é: %s\n", Codigo2);
@@ -84,6 +108,8 @@ int main(){
     printf("Área: %.2f km²\n", Area2);
     printf("O PIB é: %.2f Bilhões de reais\n", PIB2);
     printf("Os Pontos Turísticos são: %d\n", Pontos2);
+    printf("A Densidade Populacional é: %.2f hab/km²\n", Densidade2);
+    printf("PIB per Capita é: %.2f reais\n", PIBPERCAPTA2);
 
     return 0;
 }
